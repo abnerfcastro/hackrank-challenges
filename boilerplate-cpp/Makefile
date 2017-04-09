@@ -21,27 +21,27 @@ OBJECTS := $(SOURCES:$(SRCDIR)/%.cpp=$(OBJDIR)/%.o)
 rm = rm -f
 
 $(BINDIR)/$(TARGET): $(OBJECTS)
-	@mkdir -p $(BINDIR)
-	$(LINKER) $@ $(LFLAGS) $(OBJECTS)
+    @mkdir -p $(BINDIR)
+    $(LINKER) $@ $(LFLAGS) $(OBJECTS)
 
 $(OBJECTS): $(OBJDIR)/%.o : $(SRCDIR)/%.cpp
-	@mkdir -p $(OBJDIR)
-	$(CC) $(CFLAGS) -c $< -o $@
+    @mkdir -p $(OBJDIR)
+    $(CC) $(CFLAGS) -c $< -o $@
 
 .PHONEY: run
 run:
-	@$(BINDIR)/$(TARGET).exe
+    @$(BINDIR)/$(TARGET).exe
 
 .PHONEY: runinput
 runinput:
-	@$(BINDIR)/$(TARGET).exe < $(ETCDIR)/input
+    @$(BINDIR)/$(TARGET).exe < $(ETCDIR)/input
 
 .PHONEY: clean
 clean:
-	@$(rm) $(OBJECTS)
+    @$(rm) $(OBJECTS)
 
 .PHONEY: remove
 remove:
-	@$(rm) $(BINDIR)/*.exe
+    @$(rm) $(BINDIR)/*.exe
 
 # Use @ so the commands won't echo on the console.
