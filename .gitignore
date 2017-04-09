@@ -36,3 +36,4 @@
 
 # Include specific folder
 !boilerplate/.vscode
+!boilerplate-cpp/.vscode
