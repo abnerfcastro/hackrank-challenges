@@ -27,15 +27,15 @@ int main()
     // std::cout << binary << std::endl;
 
     int ones_counter = 0;
-    int consecultives = 0;
+    int consecutives = 0;
 
     for (unsigned int i = 0; i < binary.length(); i++)
     {
         ones_counter = (binary[i] == '1') ? ones_counter + 1 : 0;
-        consecultives = (ones_counter != 0 && consecultives < ones_counter) ? ones_counter : consecultives;
+        consecutives = (ones_counter != 0 && consecutives < ones_counter) ? ones_counter : consecutives;
     }
 
-    std::cout << consecultives << std::endl;
+    std::cout << consecutives << std::endl;
 
     return 0;    
 }
