@@ -36,6 +36,10 @@ run:
 runinput:
 	@$(BINDIR)/$(TARGET).exe < $(ETCDIR)/input
 
+.PHONEY: heavyinput
+heavyinput:
+	@$(BINDIR)/$(TARGET).exe < $(ETCDIR)/heavy_input
+
 .PHONEY: clean
 clean:
 	@$(rm) $(OBJECTS)
