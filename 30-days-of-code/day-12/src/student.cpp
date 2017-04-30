@@ -28,6 +28,6 @@ char Student::calculate()
     if (average >= 70 && average < 80)   return 'A';
     if (average >= 55 && average < 70)   return 'P';
     if (average >= 40 && average < 55)   return 'D';
-    if (average < 40) 					 return 'T';
+    if (average < 40)                    return 'T';
     else return '\0';
 }
