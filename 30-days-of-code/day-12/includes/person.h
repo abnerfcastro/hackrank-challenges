@@ -13,13 +13,13 @@
 
 class Person
 {
-	protected:
-		std::string firstName;
-		std::string lastName;
-		int id;
-	public:
-		Person(std::string, std::string, int);
-		void printPerson();
+    protected:
+        std::string firstName;
+        std::string lastName;
+        int id;
+    public:
+        Person(std::string, std::string, int);
+        void printPerson();
 };
 
 #endif

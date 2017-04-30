@@ -15,11 +15,11 @@
 #include "person.h"
 
 class Student : public Person {
-	private:
-		std::vector<int> testScores;
-	public:
-		Student(std::string, std::string, int, std::vector<int>);
-		char calculate();
+    private:
+        std::vector<int> testScores;
+    public:
+        Student(std::string, std::string, int, std::vector<int>);
+        char calculate();
 };
 
 #endif

@@ -10,12 +10,12 @@
 
 Person::Person(std::string firstName, std::string lastName, int identification)
 {
-	this->firstName = firstName;
-	this->lastName = lastName;
-	this->id = identification;
+    this->firstName = firstName;
+    this->lastName = lastName;
+    this->id = identification;
 }
 
 void Person::printPerson()
 {
-	std::cout << "Name: " << lastName << ", " << firstName << std::endl << "ID: " << id << std::endl;
+    std::cout << "Name: " << lastName << ", " << firstName << std::endl << "ID: " << id << std::endl;
 }
