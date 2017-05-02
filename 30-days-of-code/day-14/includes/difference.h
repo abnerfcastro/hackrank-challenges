@@ -1,6 +1,6 @@
 /*!
  * includes/difference.cpp
- * 
+ *
  * Difference class header.
  * Author: Abner Castro
  * Date: May 1st, 2017
@@ -17,12 +17,12 @@ class Difference
 {
   private:
     std::vector<int> m_elements;
-	int m_maximum_difference;
+    int m_maximum_difference;
 
-  public: 
-  	Difference(std::vector<int>);
-  	int getMaximumDifference() const;
-	void computeDifference();   
+  public:
+    Difference(std::vector<int>);
+    int getMaximumDifference() const;
+    void computeDifference();
 };
 
 #endif

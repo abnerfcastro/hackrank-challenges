@@ -1,6 +1,6 @@
 /*!
  * src/main.cpp
- * 
+ *
  * main function for project
  * Author: Abner Castro
  * Date: April 9th, 2017
